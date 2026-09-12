@@ -122,7 +122,7 @@ export const projects: Project[] = [
     ],
     contribution:
       "Designed the emotion-detection pipeline, trained the NLP model, and integrated it with the chat interface.",
-    github: "https://github.com/star-cat414/emotion-aware-chat",
+    github: "https://github.com/star-cat414/EmoChat",
     demo: "https://your-live-demo-link.com",
   },
   {
@@ -143,25 +143,28 @@ export const projects: Project[] = [
     ],
     contribution:
       "Developed the frontend, implemented authentication flows, and connected the app to Supabase for real-time data.",
-    github: "https://github.com/star-cat414/marketplace-app",
+    github: "https://github.com/star-cat414/second-market",
     demo: "https://your-live-demo-link.com",
   },
   {
-    name: "Data Science & ML Project",
-    tagline: "Coming soon — replacing this with your next build.",
-    image: "/images/project-datascience.png",
+    name: "GoldSense AI",
+    tagline: "AI-Powered Gold Price Prediction & Market Trend Analysis",
+    image: "/images/goldsense-dashboard.png",
     problem:
-      "This card is a placeholder for one of your upcoming data science, NLP, or machine learning projects.",
+      "Gold prices are notoriously volatile and hard to predict. Everyday investors lack accessible, data-driven tools to see forecasts and understand the market signals behind price movements.",
     solution:
-      "Replace the image, description, technologies, and links below with details of your next project.",
-    technologies: ["Python", "Pandas", "scikit-learn", "Matplotlib"],
+      "Built a full-stack machine-learning web application that forecasts gold prices and analyzes market trends. A FastAPI backend trains and serves an XGBoost Regressor (production) alongside a Linear Regression baseline on 2,000 real daily records from Yahoo Finance, exposed through a polished Next.js dashboard with transparent model evaluation.",
+    technologies: ["Python", "XGBoost", "FastAPI", "Next.js", "TypeScript", "PostgreSQL", "Recharts"],
     features: [
-      "Add a real feature here",
-      "Add another key feature",
-      "Add dataset & methodology notes",
+      "Gold price forecasts (3/7/30 days)",
+      "Market trend analysis & statistics",
+      "Model comparison & evaluation metrics",
+      "Feature importance insights",
+      "REST API with 10 endpoints",
     ],
-    contribution: "Describe your role and what you contributed.",
-    github: "https://github.com/star-cat414",
+    contribution:
+      "Designed and built the ML pipeline, implemented the FastAPI backend with walk-forward evaluation, and developed the data visualization dashboard.",
+    github: "https://github.com/star-cat414/goldsense-ai",
   },
 ];
 
@@ -264,13 +267,23 @@ export type ExperienceItem = {
 
 export const experiences: ExperienceItem[] = [
   {
-    role: "Software Development Intern",
-    context: "Internship — [Company Name]",
+    role: "KBZPay Mini App Developer",
+    context: "Payment Mini App — [Project / Company]",
     period: "Placeholder",
     points: [
-      "Built and shipped features, reducing time-to-done on key tasks.",
-      "Collaborated with the team using Git, code reviews, and agile practices.",
-      "Improved responsiveness and performance of existing applications.",
+      "Built a KBZPay mini app feature, integrating mobile wallet payments into a real user flow.",
+      "Implemented payment APIs and transaction handling, ensuring secure and reliable processing.",
+      "Collaborated with stakeholders to translate requirements into a working mini app.",
+    ],
+  },
+  {
+    role: "Smart Q Booking System",
+    context: "Full-Stack Booking Application",
+    period: "Placeholder",
+    points: [
+      "Developed a smart queue booking system to streamline appointment and queue management.",
+      "Designed the database schema and REST API for bookings, slots, and user management.",
+      "Built a responsive interface with authentication and real-time booking updates.",
     ],
   },
   {
@@ -316,21 +329,21 @@ export const achievements = [
 
 export const featuredRepos = [
   {
-    name: "emotion-aware-chat",
+    name: "EmoChat",
     description: "AI chat app with emotion detection & multilingual support.",
     language: "Python",
     stars: 0,
   },
   {
-    name: "marketplace-app",
+    name: "second-market",
     description: "Full-stack mobile marketplace built with React Native & Supabase.",
     language: "TypeScript",
     stars: 0,
   },
   {
-    name: "your-next-project",
-    description: "A short description of a featured repository.",
-    language: "JavaScript",
+    name: "goldsense-ai",
+    description: "AI-powered gold price prediction & market trend analysis full-stack ML app.",
+    language: "Python",
     stars: 0,
   },
 ];
